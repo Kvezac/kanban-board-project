@@ -1,9 +1,10 @@
-import constant from './constants.js'
+import constant, { listClassColumn } from './constants.js'
 
 export default function result(value) {
     const positionTask = constant.positionTask
+    const classColumn = listClassColumn
     let contentTask = 
-    `<div class="taskboard__item task task--backlog" draggable = true>
+    `<div class="taskboard__item task ${classColumn}" draggable = true>
        <div class="task__body">
          <p class="task__view">${value}</p>
          <input class="task__input" type="text" value="${value}">

@@ -23,7 +23,6 @@ function serializeForm(formNode) {
 }
 
 export function hideElement() {
-  console.log("hideElement");
 
   taskboardAllTask.forEach((taskBoard) => {
     let countTask = taskBoard.querySelectorAll(".task").length;
