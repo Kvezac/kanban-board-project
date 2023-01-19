@@ -4,7 +4,7 @@ This is a project after completing the Java script course. Below is a descriptio
 - Run a git clone on your workstation
 - npm install
 - npm run start
-- Open browser fill in form fields
+- Open browser add a task
 
 <h2>Lighthouse</h2>
 <p align="center">
