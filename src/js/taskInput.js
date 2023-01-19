@@ -23,10 +23,8 @@ function serializeForm(formNode) {
 }
 
 export function hideElement() {
-
   taskboardAllTask.forEach((taskBoard) => {
     let countTask = taskBoard.querySelectorAll(".task").length;
-    console.log(countTask);
     const classShadowElement =
       taskBoard.querySelector(".task--empty").classList;
     countTask > 1
@@ -48,7 +46,6 @@ export function emptyBasket() {
   const isEmpty = !Boolean(
     document.querySelector(".taskboard__list--trash").children.length - 1
   );
-  console.log(isEmpty);
   constant.deleteTasks.disabled = isEmpty;
   return isEmpty;
 }

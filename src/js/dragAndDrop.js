@@ -1,14 +1,13 @@
 // focus task, drag task, move task, drop task 
 import constant from "./constants.js";
 import { emptyBasket, hideElement } from "./taskInput.js";
-import { classChengeColumnTask } from "./changeClassColumnTask.js";
+import { сhangeColumnTask } from "./changeClassColumnTask.js";
 
 const taskboardAllTask = constant.taskboardAllTask;
 const taskElements = constant.taskElements;
 
 taskElements.forEach((evt) => {
   if (!evt.classList.contains("task--empty")) {
-    console.log('empty');
     evt.draggable = true;
   }
 });
@@ -24,7 +23,8 @@ export function dragStart (evt)  {
 export function dragEnd (evt) {
   const activeElement = document.querySelector(`.task--dragged`);
   evt.target.classList.remove(`task--dragged`);
-  classChengeColumnTask(activeElement);
+  console.log('dragend');
+  сhangeColumnTask(activeElement);
   emptyBasket();
 };
 
