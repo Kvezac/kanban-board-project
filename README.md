@@ -8,5 +8,5 @@ This is a project after completing the Java script course. Below is a descriptio
 
 <h2>Lighthouse</h2>
 <p align="center">
-<img src="./kanban-board-project/img/lighthouse.png" alt="Lighthouse">
+<img src="./img/lighthouse.png" alt="Lighthouse">
 </p>
